@@ -32,4 +32,7 @@
 def self.find_by_city_name(city)
   @@all.select{|h| h.city.name == city || h.city.name == "Baghdād"}.map{|h| h.hotel_name}
 end
+def self.all
+  @@all
+end
 end

@@ -4,7 +4,7 @@ def start
 puts "+-----------------------------------+".yellow
 puts "|   Welcome To Iraqi Hotels !!!     |".yellow
 puts "+-----------------------------------+".yellow
-puts""
+puts ""
 puts "1) Baghdad".blue
 puts "2) Erbil".blue
 puts "3) Exit".blue
@@ -41,6 +41,6 @@ def self.hotel_list(input)
   end
 end
 def self.ckeck_input_piked(pik_hotel,input)
-  pik_hotel.between?(0,Scrap.start_nokogiri(CITY[input-1]).size)
+  pik_hotel.between?(0,Hotel.all.size)
 end
 end
