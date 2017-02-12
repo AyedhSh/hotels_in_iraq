@@ -16,8 +16,8 @@ class Scrap
   hotel_booking = element.css("span.lastbooking").text.strip.gsub("\n",'')
   hotel_rating = element.css("span.js--hp-scorecard-scoreword").text.strip.gsub("\n",'')
   if hotel_name != ""
-  city = City.new(city_name)
-  hotel = Hotel.new(hotel_name,city,hotel_rating,hotel_describe,hotel_booking)
+    city = City.new(city_name)
+    hotel = Hotel.new(hotel_name,city,hotel_rating,hotel_describe,hotel_booking)
  
   end
   end
