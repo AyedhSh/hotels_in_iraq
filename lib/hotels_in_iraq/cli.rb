@@ -1,5 +1,5 @@
 class Cline
-  CITY=["baghdad","Erbil"]
+  CITY=["baghdad","Erbil","Karbala","An Najaf","Duhok"]
 def start
 puts "+-----------------------------------+".yellow
 puts "|   Welcome To Iraqi Hotels !!!     |".yellow
@@ -7,18 +7,31 @@ puts "+-----------------------------------+".yellow
 puts ""
 puts "1) Baghdad".blue
 puts "2) Erbil".blue
-puts "3) Exit".blue
+puts "3) Karbala".blue
+puts "4) An Najaf".blue
+puts "5) Duhok".blue
+puts "6) Exit".blue
 print "Enter your city number, please:".green
 input = gets.strip.to_i
-if input == 3
+if input == 6
+  puts "Than you for visiting..By!"
   exit
 else
-while input != 3
+while input != 6
 if input == 2
   Cline.hotel_list(input)
      start
 elsif input == 1
   Cline.hotel_list(input)
+    start
+  elsif input== 3
+    Cline.hotel_list(input)
+    start
+  elsif input == 4
+    Cline.hotel_list(input)
+    start
+  elsif input == 5
+    Cline.hotel_list(input)
     start
 else
   start
