@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["AyedhSh"]
   spec.email         = ["alshmary_ad@yahoo.com"]
 
-  spec.summary       = "Write a short summary, because Rubygems requires one."
-  spec.description   = "Write a longer description or delete this line."
+  spec.summary       = "This application is based on the information display for hotels by city name and the name of the hotel, Rating and Price."
+  spec.description   = "Welcome to Hotels Reservation application which will help you to choose the right hotel for booking."
   spec.homepage      = "https://github.com/AyedhSh/hotels_in_iraq"
   spec.license       = "MIT"
 
@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
   #   raise "RubyGems 2.0 or newer is required to protect against " \
   #     "public gem pushes."
   # end
+
+  # gem build name
+  # gem push name
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})

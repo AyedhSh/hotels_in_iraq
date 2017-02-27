@@ -14,7 +14,7 @@ puts "6) Exit".blue
 print "Enter your city number, please:".green
 input = gets.strip.to_i
 if input == 6
-  puts "Than you for visiting..By!"
+  puts "Thank you for visiting..By!"
   exit
 else
 while input != 6
